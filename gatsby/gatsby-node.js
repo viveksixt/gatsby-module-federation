@@ -6,6 +6,13 @@ const dependencies = require("./package.json").dependencies
 exports.onCreateWebpackConfig = ({ stage, actions, plugins, module }) => {
   actions.setWebpackConfig({
     plugins: [
+      /* new ModuleFederationPlugin({
+        name: "gatsby",
+        filename: "remoteEntry.js",
+        remotes: {
+          joker: "joker@//localhost:3002/remoteEntry-joker.js",
+        },
+      }), */
       new ModuleFederationPlugin({
         name: "gatsby",
         filename: "remoteEntry.js",

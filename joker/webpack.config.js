@@ -37,7 +37,8 @@ module.exports = {
       library: { type: 'var', name: 'joker' },
       filename: 'remoteEntry-joker.js',
       exposes: {
-        './Button': './src/Button'
+        './Button': './src/Button',
+        './Input': './src/Input'
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } }
     }),

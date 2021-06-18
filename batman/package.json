@@ -1,5 +1,5 @@
 {
-  "name": "@basic-host-remote/batman",
+  "name": "batman",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {

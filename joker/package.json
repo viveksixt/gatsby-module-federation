@@ -1,5 +1,5 @@
 {
-  "name": "@basic-host-remote/joker",
+  "name": "joker",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {

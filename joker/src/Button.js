@@ -1,16 +1,15 @@
 import React from 'react';
+const FcButton = ({ count: parentCount }) => {
+  const [count, setCount] = React.useState(parentCount);
+  return (
+    <button onClick={() => setCount((count) => count + 1)}>
+      Click me: {count}
+    </button>
+  );
+};
 export default class Button extends React.Component {
-  state = { counter: 1 };
-  handleClick = () => {
-    this.setState({
-      counter: this.state.counter + 1
-    });
-  };
-
   render() {
-    return (
-      <button onClick={this.handleClick}>Click me: {this.state.counter}</button>
-    );
+    return <FcButton count={0} />;
   }
 }
 /*
